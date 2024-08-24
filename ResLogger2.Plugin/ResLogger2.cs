@@ -73,6 +73,7 @@ public class ResLogger2 : IDalamudPlugin
         ResLogWindows.AddWindow(StatsWindow);
         
         DalamudApi.PluginInterface.UiBuilder.Draw += () => ResLogWindows.Draw();
+        DalamudApi.PluginInterface.UiBuilder.OpenMainUi += () => LogWindow.Toggle();
         
         var getResourceAsync = DalamudApi.SigScanner.ScanText("E8 ?? ?? ?? ?? 48 8B 5C 24 ?? 48 83 C4 68");
         var getResourceSync = DalamudApi.SigScanner.ScanText("E8 ?? ?? ?? ?? 48 8B D8 8B C7");
