@@ -11,4 +11,4 @@ description: |-
 punchline: A path logger with optional crowdsourcing functionality. 
 repo_url: https://github.com/lmcintyre/reslogger2
 changelog: |-
-  Added the ability to open UI from Plugin Installer window
+  Added the ability to open UI from the Plugin Installer window
